@@ -9,13 +9,13 @@ namespace API.Errors
     {
         public ApiException(int statusCode, string message = null, string details = null)
         {
-            StatusCode = statusCode;
-            Message = message;
-            Details = details;
+            this.statusCode = statusCode;
+            this.message = message;
+            this.details = details;
         }
 
-        public int StatusCode { get; set; }
-        public string Message { get; set; }
-        public string Details { get; set; }
+        public int statusCode { get; set; }
+        public string message { get; set; }
+        public string details { get; set; }
     }
 }
